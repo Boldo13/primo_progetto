@@ -17,3 +17,9 @@ def variabili(request):
         'var3':'Terza variabile',
     }
     return render(request,"variabili.html",context)
+
+def chi_siamo(request):
+    return render(request,"chi_siamo.html")
+
+def index(request):
+    return render(request,"index.html")
