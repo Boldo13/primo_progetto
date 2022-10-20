@@ -23,3 +23,5 @@ def chi_siamo(request):
 
 def index(request):
     return render(request,"index.html")
+
+
