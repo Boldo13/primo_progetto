@@ -21,5 +21,7 @@ urlpatterns = [
     path('prima_app/',include('prima_app.urls',namespace="prima_app")),
     path('seconda_app/',include('seconda_app.urls',namespace="seconda_app")),
     path('',index_generale,name="index_generale"),
+    path('prova_pratica_1/',include(,namespace="prova_pratica_1")),
+
 ]   
 
