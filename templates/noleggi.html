@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} {{ block.super}} | variabili {% endblock title %}
+{% block content %}
+    <h1>Elenco auto</h1>
+    <ol>
+    {% for auto, noleggi in noleggi.items%}
+
+    <li>{{auto}}</li>
+    <ol>
+        {% for noleggio in noleggi %}
+          <li>{{noleggio}}</li>
+        {% endfor%}
+    </ol>
+    {% endfor%}
+    </ol>
+    {% endblock content %}

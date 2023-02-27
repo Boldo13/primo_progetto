@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %} {{ block.super}} | variabili {% endblock title %}
+{% block content %}
+    <h1>elenco materie</h1>
+    <ol>
+    {% for m in materie%}
+    <li>{{m}}</li>
+    {% endfor%}
+    </ol>
+    {% endblock content %}
